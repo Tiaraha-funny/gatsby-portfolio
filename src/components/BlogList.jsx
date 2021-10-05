@@ -27,7 +27,7 @@ const Wrapper = styled.article`
     }
 `;
 
-const Image = styled.div`
+const ImageWrapper = styled.div`
   margin: auto;
   position: relative;
   box-shadow: ${props => props.theme.shadow.feature.small.default};
@@ -87,26 +87,21 @@ const Information = styled.div`
   }
 `;
 
-const Date = styled.div`
-  margin-top: 1rem;
-  color: ${props => props.theme.colors.black.lighter};
-`;
-
 const Title = styled.h1`
   margin: 0;
 `;
 
-const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
+const BlogList = ({ path, cover, title, excerpt, tags }) => (
   <Container>
     <Wrapper>
       <Link to={path}>
         <Title>{title}</Title>
       </Link>
-      <Image>
+      <ImageWrapper>
         <Link to={path} title={title}>
           <Img fluid={cover} />
         </Link>
-      </Image>
+      </ImageWrapper>
       <Information>
         <TagsBlock list={tags} />
         {excerpt}

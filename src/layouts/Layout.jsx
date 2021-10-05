@@ -54,7 +54,18 @@ const Layout = ({ children }) => (
             font-family: ${theme.fontFamily.heading};
           }
 
+          p {
+            text-align: left;
+          }
+
           ${headroom}
+
+          @media(min-width: 1440px) {
+            .headroom > * {
+              max-width: 1440px;
+              margin: auto;
+            }
+          }
         `}
       />
       <SEO />

@@ -72,7 +72,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Image = styled.div`
+const ImageWrapper = styled.div`
   position: absolute;
   top: 0;
   overflow: hidden;
@@ -107,9 +107,9 @@ const Title = styled.h2`
 
 const PostList = ({ cover, path, title, excerpt }) => (
   <Wrapper>
-    <Image>
+    <ImageWrapper>
       <Img fluid={cover} />
-    </Image>
+    </ImageWrapper>
     <StyledLink to={path}>
       <Info>
         <Title>{title}</Title>

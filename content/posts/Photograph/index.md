@@ -12,6 +12,6 @@ tags:
   ]
 ---
 
-This website is built from scratch with semantic HTML, CSS prepossessor like SASS for it to be responsive. BEM notation is used to make meanignfull class names.
+This website is built from scratch with semantic HTML and CSS3 with SASS for it to be responsive. BEM notation is used to make meaningful class names.
 
-In this project, the users can see many photos. There are some examples of Morocco deserts photos.
+In this project, the users can see beautiful sceneries around the world. There are photos of deserts in Morocco for example.

@@ -1,9 +1,13 @@
 const config = require('./config/site');
 
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   siteMetadata: {
     ...config,
   },
+  pathPrefix: `/yourpathprefix`,
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',

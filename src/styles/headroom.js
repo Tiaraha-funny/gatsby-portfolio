@@ -11,9 +11,14 @@ const headroom = css`
   .headroom {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     padding: 1rem 1.5rem;
+
+    @media (min-width: 1000px) {
+      flex-direction: row;
+    }
+
     svg {
       height: 2.5rem;
       g {
@@ -62,6 +67,14 @@ const headroom = css`
     }
     span {
       color: ${theme.colors.black.base};
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .headroom-wrapper {
+      position: fixed;
+      transition: none;
+      transform: none;
     }
   }
 `;

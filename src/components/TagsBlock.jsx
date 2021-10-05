@@ -31,12 +31,16 @@ const TagsBlock = ({ list }) => (
         if (tag.includes('github')) {
           name = 'Github';
         }
-        if (tag.includes('netlify')) {
+        if (tag.includes('netlify') || tag.includes('google')) {
           name = 'Demo';
         } else {
           name;
         }
-        return <a href={tag}>{name}</a>;
+        return (
+          <a href={tag} key={tag}>
+            {name}
+          </a>
+        );
       })}
   </TagsContainer>
 );

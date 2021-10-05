@@ -50,9 +50,11 @@
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "sharp": "^0.27.2",
     "typeface-candal": "0.0.54",
     "typeface-open-sans": "0.0.54",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -62,6 +64,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "gatsby-plugin-root-import": "^2.0.6",
     "lighthouse": "^3.2.1",
     "prettier": "^1.18.2"
   },

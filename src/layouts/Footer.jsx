@@ -12,6 +12,13 @@ const Wrapper = styled.footer`
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     padding-top: 7rem;
   }
+
+  @media (min-width: 1440px) {
+    * {
+      margin: auto;
+      max-width: 1440px;
+    }
+  }
 `;
 
 const Text = styled.div`
@@ -23,25 +30,29 @@ const Text = styled.div`
   justify-content: space-around;
 `;
 
-const ContactLink = styled.sapn`
+const ContactLink = styled.span`
   color: #ffffff;
+`;
+
+const Link = styled.a``;
+
+const TextLink = styled.span`
+  color: #ffffff;
+  font-weight: bold;
+  :hover {
+    text-decoration: underline;
+    color: blue;
+    font-weight: normal;
+  }
 `;
 
 const Footer = () => (
   <Wrapper>
     <Text>
-      <a href="mailto:peta.jea@onja.org">
-        <ContactLink>Email me: </ContactLink>
-        Email: @petaOnja
-      </a>
-      <a href="https://github.com/Tiaraha-funny">
-        <ContactLink>Github link: </ContactLink>
-        Github.com
-      </a>
-      <a href="https://onja.org/">
-        <ContactLink>Onja organization: </ContactLink>
-        Onja.org
-      </a>
+      <Link href="mailto:peta.jea@onja.org">
+        <ContactLink>Contact me: </ContactLink>
+        <TextLink>peta@onja.org</TextLink>
+      </Link>
     </Text>
   </Wrapper>
 );

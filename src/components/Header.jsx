@@ -20,13 +20,19 @@ const Wrapper = styled.header`
   }
   position: relative;
   overflow: hidden;
+  @media (min-width: 1440px) {
+    * {
+      margin: auto;
+      max-width: 1440px;
+    }
+  }
 `;
 
 const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
   z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -37,6 +43,10 @@ const Text = styled.div`
   padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
+
+  @media (min-width: 1000px) {
+    top: 50%;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -44,16 +54,17 @@ const Subtitle = styled.p`
   color: ${props => props.theme.colors.white.light};
 `;
 
-const Header = ({ children, title, date, cover }) => (
-  <Wrapper>
-    <Img fluid={cover || {} || [] || ''} />
-    <Text>
-      <h1>{title}</h1>
-
-      {children && <Subtitle>{children}</Subtitle>}
-    </Text>
-  </Wrapper>
-);
+const Header = ({ children, title, cover }) => {
+  return (
+    <Wrapper>
+      {cover && <Img fluid={cover || {} || [] || ''} key={title} />}
+      <Text>
+        <h1>{title}</h1>
+        {children && <Subtitle>{children}</Subtitle>}
+      </Text>
+    </Wrapper>
+  );
+};
 
 export default Header;
 

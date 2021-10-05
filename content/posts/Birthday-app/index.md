@@ -1,5 +1,5 @@
 ---
-path: '/post-one'
+path: '/post-five'
 cover: './birthday-app.jpg'
 date: '2018-10-15'
 title: 'Birthday App'
@@ -12,6 +12,6 @@ tags:
   ]
 ---
 
-I created a birthday application as CRUD with pure vanilla Javascript. This app shows us whose person is the closest to have birthday. All the people's birthday are stored in the localstorage.
+I created a birthday application as CRUD with pure vanilla Javascript. This app shows us whose birthday is closest. The birthdays are stored in the local storage.
 
-This app allows the users to add anyone they like to the lists. They can edit names and birth of date. Also, they can delete any people's birthday. The lists of the people's birthday are sorted by the nearest birthday. Through this app, the users will easily remember who has birthday next.
+This app allows the users to add anyone they like to the lists. They can edit names and the date of birth. Also, they can delete a birthday. The lists of the people's birthdays are sorted by the nearest birthday. Through this app, the user will easily remember who has the upcoming birthday.

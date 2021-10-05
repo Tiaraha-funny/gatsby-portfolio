@@ -50,14 +50,6 @@ exports.createPages = ({ graphql, actions }) => {
 
         const tags = Object.keys(postsByTag);
 
-        createPage({
-          path: '/tags',
-          component: tagPage,
-          context: {
-            tags: tags.sort(),
-          },
-        });
-
         //create tags
         tags.forEach(tagName => {
           const posts = postsByTag[tagName];
